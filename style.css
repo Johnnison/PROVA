@@ -1,82 +1,31 @@
-/* POKÉDEX*/
-/* Reset de estilos para todos os elementos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    outline: none;
-}
-
-/* Estilos para o conteúdo principal */
+/* style.css */
 .main {
-    margin: 20px auto;
-    max-width: 1200px;
-    width: 96%;
-    background-color: rgba(0, 0, 1, 0.658); /* Cor de fundo com transparência */
-    padding: 30px 2%;
-    border-radius: 80px;
-    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
 
-.main h2 {
-    font-size: 2rem; /* Tamanho da fonte ajustado */
-    color: #fff; /* Cor do texto ajustada */
-    margin: 8px 0;
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
 }
 
 .pokemon-boxes {
-    margin: 20px;
     display: flex;
     flex-wrap: wrap;
-}
-
-#quantidade {
-    width: 92%;
-    height: 65px;
-    padding: 20px;
-    padding-left: 35px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 0;
-    border-radius: 20px;
-    font-size: 23px;
-    color: #fff;
-}
-
-#quantidade::placeholder {
-    color: #fff;
-    opacity: 1;
+    justify-content: center;
 }
 
 .pokemon {
-    margin: 35px auto;
-    border-radius: 20px;
-    width: 50%;
-    /* Ajuste na largura */
-    background-color: rgba(230, 230, 230, 0.461);
-    /* Cor de fundo com transparência */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
 }
 
-
-.pokemon img{
-    width: 100%;
-    border: 5px solid rgba(206, 34, 34);
-    border-radius: 20px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    margin: 0 auto;
-    
-}
-
-
-.pokemon p{
-    height: 50px;
-    background-color:  rgba(206, 34, 34);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color: black;
-    font-size: 21px;
-    padding: 10px 0;
-    text-transform: capitalize;
+.pokemon img {
+    max-width: 100px;
+    height: auto;
 }
